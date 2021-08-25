@@ -1,21 +1,21 @@
 import { Fabricator, sequence } from '@travelperksl/fabricator';
 import faker from 'faker';
 
-export const ingredientFabricator = Fabricator({
+export const ingredient = Fabricator({
     name: () => faker.random.words(),
 });
 
-export const recipeFabricator = Fabricator({
+export const recipe = Fabricator({
     id: () => sequence('recipeId'),
     name: () => faker.random.words(),
     description: () => faker.random.words(),
-    ingredients: () => ingredientFabricator.times({ min: 1, max: 5, }),
+    ingredients: () => ingredient.times({ min: 1, max: 5, }),
 });
 
-export const recipeFabricatorWithNoId = recipeFabricator.extend({ id: undefined });
+export const recipeWithNoId = recipe.extend({ id: undefined });
 
 export default {
-    ingredientFabricator,
-    recipeFabricator,
-    recipeFabricatorWithNoId,
+    ingredient,
+    recipe,
+    recipeWithNoId,
 };
