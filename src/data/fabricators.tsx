@@ -13,3 +13,8 @@ export const recipeFabricator = Fabricator({
         'max': 5,
     })),
 });
+
+export default {
+    ingredientFabricator,
+    recipeFabricator,
+};
