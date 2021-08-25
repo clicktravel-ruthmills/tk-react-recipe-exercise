@@ -1,8 +1,8 @@
-type Ingredient = {
+interface Ingredient {
     name: string,
 };
 
-type Recipe = {
+interface Recipe {
     id?: number,
     name: string,
     description: string,
