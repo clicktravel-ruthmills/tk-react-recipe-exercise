@@ -10,8 +10,8 @@ export const recipeFabricator = Fabricator({
     name: () => faker.random.words(),
     description: () => faker.random.words(),
     ingredients: () => ingredientFabricator.times(faker.datatype.number({
-        'min': 1,
-        'max': 5,
+        min: 1,
+        max: 5,
     })),
 });
 
