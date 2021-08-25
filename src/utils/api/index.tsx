@@ -12,9 +12,9 @@ const parseResponse = (response: Response): Promise<any> | Response => {
 
 export const request = (
     method: string,
-    name: string | undefined,
+    name: string | '',
 ) => {
-    const url = 'http://localhost:8000/recipes/' + name ? `name=${name}` : '';
+    const url = 'http://localhost:8000/recipes/' + ((name !== '') ? `?name=${name}` : '');
     const headers = { 'Content-Type': 'application/json' };
     const finalOptions = Object.assign({}, { headers, method });
     return fetch(url, finalOptions)
