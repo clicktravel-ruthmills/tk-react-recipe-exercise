@@ -9,10 +9,7 @@ export const recipeFabricator = Fabricator({
     id: () => sequence('recipeId'),
     name: () => faker.random.words(),
     description: () => faker.random.words(),
-    ingredients: () => ingredientFabricator.times(faker.datatype.number({
-        min: 1,
-        max: 5,
-    })),
+    ingredients: () => ingredientFabricator.times({ min: 1, max: 5, }),
 });
 
 export const recipeFabricatorWithNoId = recipeFabricator.extend({ id: undefined });
