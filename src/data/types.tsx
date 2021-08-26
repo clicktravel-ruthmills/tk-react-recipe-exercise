@@ -8,3 +8,7 @@ export interface Recipe {
     description: string,
     ingredients: Array<Ingredient>,
 }
+
+export interface RecipeList {
+    recipes: Array<Recipe>,
+}
