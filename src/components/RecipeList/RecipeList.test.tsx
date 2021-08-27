@@ -1,9 +1,10 @@
 import React from 'react';
 import { render } from '@testing-library/react';
 import { recipe as recipeFabricator } from '../../data/fabricators';
+import RecipeList from './RecipeList';
 
-describe('<RecipeListContainer />', () => {
-    it('should render recipe list container', () => {
+describe('<RecipeList />', () => {
+    it('should render recipe list', () => {
 
     });
 });

@@ -1,3 +1,5 @@
+import '@testing-library/jest-dom/extend-expect';
+
 global.mockFetchPromise = (data, options = {}) => {
   const defaultOptions = {
     status: 200,

@@ -9,6 +9,6 @@ export interface Recipe {
     ingredients: Array<Ingredient>,
 }
 
-export interface RecipeList {
+export interface Recipes {
     recipes: Array<Recipe>,
 }

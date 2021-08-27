@@ -6,10 +6,10 @@ type Props = {
     value: Ingredient,
 };
 
-const Ingredient = ({
+const IngredientForm = ({
     value,
 }: Props) => {
 
 };
 
-export default Ingredient;
+export default IngredientForm;

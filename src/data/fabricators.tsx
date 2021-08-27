@@ -14,8 +14,11 @@ export const recipe = Fabricator({
 
 export const recipeWithNoId = recipe.extend({ id: undefined });
 
+export const recipeList = recipe.times({ min: 1, max: 5 });
+
 export default {
     ingredient,
     recipe,
     recipeWithNoId,
+    recipeList,
 };
