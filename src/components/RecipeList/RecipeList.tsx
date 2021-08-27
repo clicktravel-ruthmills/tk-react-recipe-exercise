@@ -1,22 +1,20 @@
 import React from 'react';
 import 'styled-components/macro';
-import { Recipes } from '../../data/types';
+import { Recipe } from '../../data/types';
 import RecipeRow from '../RecipeRow/RecipeRow';
 
 type Props = {
-    value: Recipes,
+    value: Array<Recipe>,
 };
 
 const RecipeList = ({
     value,
 }: Props) => {
 
-    const { recipes } = value;
-
     return (
         <div className="recipeList">
             {
-                recipes.map(recipe => {
+                value.map(recipe => {
                     return (
                         <RecipeRow value={recipe} />
                     )
