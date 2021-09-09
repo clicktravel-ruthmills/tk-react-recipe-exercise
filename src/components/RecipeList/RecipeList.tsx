@@ -1,7 +1,6 @@
 import React from 'react';
-import 'styled-components/macro';
+import DataTable from 'react-data-table-component';
 import { Recipe } from '../../data/types';
-import RecipeRow from '../RecipeRow/RecipeRow';
 
 type Props = {
     value: Array<Recipe>,
@@ -11,16 +10,27 @@ const RecipeList = ({
     value,
 }: Props) => {
 
+    const columns: Array<any> = [
+        {
+            name: 'Title',
+            selector: (row: any) => row.title,
+            sortable: true,
+        },
+        {
+            name: 'Description',
+            selector: (row: any) => row.description,
+        },
+        {
+            name: 'Ingredients',
+            selector: (row: any) => row.ingredients,
+        }
+    ];
+
     return (
-        <div className="recipeList">
-            {
-                value.map(recipe => {
-                    return (
-                        <RecipeRow value={recipe} />
-                    )
-                })
-            }
-        </div>
+        <DataTable
+            columns={columns}
+            data={value}
+        />
     )
 };
 

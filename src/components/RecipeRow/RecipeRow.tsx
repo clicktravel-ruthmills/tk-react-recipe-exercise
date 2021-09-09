@@ -18,6 +18,8 @@ const RecipeRow = ({
             <div className="name">{name}</div>
             <div className="description">{description}</div>
             <div className="ingredients">{ingredientsText}</div>
+            <div className="edit"></div>
+            <div className="delete"></div>
         </div>
     );
 };

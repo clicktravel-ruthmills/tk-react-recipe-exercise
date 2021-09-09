@@ -20,7 +20,7 @@ test('request with no name search', async () => {
 
   expect(mockFetch).toHaveBeenCalledTimes(1);
   expect(mockFetch).toHaveBeenCalledWith(
-    'http://localhost:8000/recipes/',
+    '/recipes/',
     {
       headers: { 'Content-Type': 'application/json' },
       method: 'POST',
@@ -37,7 +37,7 @@ test('request with name search', async () => {
 
   expect(mockFetch).toHaveBeenCalledTimes(1);
   expect(mockFetch).toHaveBeenCalledWith(
-    'http://localhost:8000/recipes/?name=Pi',
+    '/recipes/?name=Pi',
     {
       headers: { 'Content-Type': 'application/json' },
       method: 'GET',
