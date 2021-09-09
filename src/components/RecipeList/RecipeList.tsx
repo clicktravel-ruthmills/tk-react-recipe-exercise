@@ -1,6 +1,6 @@
 import React from 'react';
 import DataTable from 'react-data-table-component';
-import { Recipe } from '../../data/types';
+import { Recipe, Ingredient } from '../../data/types';
 
 type Props = {
     value: Array<Recipe>,
@@ -13,7 +13,7 @@ const RecipeList = ({
     const columns: Array<any> = [
         {
             name: 'Title',
-            selector: (row: any) => row.title,
+            selector: (row: any) => row.name,
             sortable: true,
         },
         {
@@ -22,7 +22,7 @@ const RecipeList = ({
         },
         {
             name: 'Ingredients',
-            selector: (row: any) => row.ingredients,
+            selector: (row: any) => row.ingredients.map((r: Ingredient) => r.name).join(', '),
         }
     ];
 
