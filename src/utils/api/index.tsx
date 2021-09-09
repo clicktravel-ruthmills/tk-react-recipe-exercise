@@ -12,9 +12,10 @@ const parseResponse = (response: Response): Promise<any> | Response => {
 
 export const request = (
     method: string,
-    name: string | '',
+    id?: number | '',
+    name?: string | '',
 ) => {
-    const url = '/recipes/' + ((name !== '') ? `?name=${name}` : '');
+    const url = '/recipes/' + (id ? id : '') + ((name && name !== '') ? `?name=${name}` : '');
     const headers = { 'Content-Type': 'application/json' };
     const finalOptions = Object.assign({}, { headers, method });
     return fetch(url, finalOptions)
