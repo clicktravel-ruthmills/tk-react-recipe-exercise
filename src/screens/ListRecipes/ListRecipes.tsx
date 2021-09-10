@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import RecipeList from '../../components/RecipeList/RecipeList';
-import { listRecipes } from '../../data/api';
+import { listRecipes, deleteRecipe } from '../../data/api';
 import { Recipe } from '../../data/types';
 
 type Props = {
@@ -19,13 +19,22 @@ const ListRecipes = ({
         }
     };
 
+    const deleteSelectedRecipe = async (id: number) => {
+        try {
+            await deleteRecipe(id);
+            await retrieveAndSetRecipes();
+        } catch (err) {
+            console.error(err);
+        }
+    };
+
     useEffect(() => {
         retrieveAndSetRecipes()
     }, []);
 
     return (
         <div>
-            <RecipeList value={recipes}/>
+            <RecipeList value={recipes} deleteRecipe={deleteSelectedRecipe}/>
         </div>
     );
 };

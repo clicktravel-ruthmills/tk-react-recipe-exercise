@@ -5,10 +5,12 @@ import Button from '../Button/Button';
 
 type Props = {
     value: Array<Recipe>,
+    deleteRecipe: (id: number) => Promise<void>,
 };
 
 const RecipeList = ({
     value,
+    deleteRecipe,
 }: Props) => {
 
     const columns: Array<any> = [
@@ -32,7 +34,7 @@ const RecipeList = ({
         },
         {
             selector: (row: any) => (
-                <Button>Delete</Button>
+                <Button onClick={() => deleteRecipe(row.id)}>Delete</Button>
             ),
         }
     ];

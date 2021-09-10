@@ -16,7 +16,7 @@ export const updateRecipe = (recipe: Recipe): Promise<void> =>
         (response) => response.results || response
     );
 
-export const deleteRecipe = (recipe: Recipe): Promise<void> =>
-    request('DELETE', recipe.id, '').then(
-        (response) => response.results || response
+export const deleteRecipe = (id: number): Promise<void> =>
+    request('DELETE', id, '').then(
+        (response) => response
     );
