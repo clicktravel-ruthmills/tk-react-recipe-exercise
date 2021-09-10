@@ -4,6 +4,10 @@ import { BrowserRouter as Router, Link, Switch, Route } from 'react-router-dom';
 import ListRecipes from './screens/ListRecipes/ListRecipes';
 import CreateRecipe from './screens/CreateRecipe/CreateRecipe';
 
+import Nav from './components/Nav/Nav';
+import NavList from './components/NavList/NavList';
+import NavEntry from './components/NavEntry/NavEntry';
+
 import './App.css';
 
 function App() {
@@ -11,16 +15,16 @@ function App() {
     <div className="App">
       <Router>
           <div>
-              <nav>
-                  <ul>
-                      <li>
+              <Nav>
+                  <NavList>
+                      <NavEntry>
                           <Link to="/">List Recipes</Link>
-                      </li>
-                      <li>
+                      </NavEntry>
+                      <NavEntry>
                           <Link to="/create">Create Recipe</Link>
-                      </li>
-                  </ul>
-              </nav>
+                      </NavEntry>
+                  </NavList>
+              </Nav>
           </div>
           <Switch>
               <Route path="/create">
