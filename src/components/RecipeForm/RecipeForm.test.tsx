@@ -66,11 +66,11 @@ describe('<RecipeForm />', () => {
                 { name: 'naan bread' },
                 { name: 'salad' },
                 { name: 'mayonnaise'},
-            ]
+            ],
         });
     });
 
-    it('Allows the user to change ingredients', () => {
+    it('allows the user to change ingredients', () => {
         fillOutFields();
         const ingredientsField = screen.getByTestId('recipe-ingredients');
         fireEvent.change(
@@ -86,7 +86,7 @@ describe('<RecipeForm />', () => {
                 { name: 'chicken doner meat' },
                 { name: 'pitta bread' },
                 { name: 'stupidly hot chilli sauce' },
-            ]
+            ],
         });
     });
 });
