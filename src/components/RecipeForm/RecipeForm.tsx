@@ -57,7 +57,7 @@ const RecipeForm = ({
     const renderErrorMessage = () => {
         if (renderError === true) {
             return (
-                <ErrorMessage>Please fill in name and description fields, and add at least one ingredient.</ErrorMessage>
+                <ErrorMessage data-testid='error-message'>Please fill in name and description fields, and add at least one ingredient.</ErrorMessage>
             )
         }
     };
@@ -76,12 +76,14 @@ const RecipeForm = ({
         <Form>
             <Label>Name</Label>
             <Input type='text'
+                data-testid='recipe-name'
                 placeholder='Recipe name, e.g. Doner Kebab'
                 value={name}
                 onChange={handleNameChange}
             />
             <Label>Description</Label>
             <TextArea
+                data-testid='recipe-description'
                 placeholder='Recipe description, e.g. The tastiest Doner Kebab you have ever eaten'
                 value={description}
                 onChange={handleDescriptionChange}
@@ -89,6 +91,7 @@ const RecipeForm = ({
             />
             <Label>Ingredients</Label>
             <TextArea
+                data-testid='recipe-ingredients'
                 placeholder='Comma-separated list of ingredients, e.g. mystery meat, pitta bread, salad, chilli sauce'
                 value={ingredients}
                 onChange={handleIngredientsChange}
