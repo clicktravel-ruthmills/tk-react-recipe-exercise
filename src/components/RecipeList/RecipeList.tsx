@@ -5,11 +5,13 @@ import Button from '../Button/Button';
 
 type Props = {
     value: Array<Recipe>,
+    editRecipe: (id: number) => Promise<void>,
     deleteRecipe: (id: number) => Promise<void>,
 };
 
 const RecipeList = ({
     value,
+    editRecipe,
     deleteRecipe,
 }: Props) => {
 
@@ -29,7 +31,7 @@ const RecipeList = ({
         },
         {
             selector: (row: any) => (
-                <Button>Edit</Button>
+                <Button onClick={() => editRecipe(row.id)}>Edit</Button>
             ),
         },
         {

@@ -51,16 +51,25 @@ const RecipeForm = ({
         }
     };
 
+    useEffect(() => {
+        if (value) {
+            setName(value.name)
+            setDescription(value.description)
+        }
+    }, [value]);
+
     return (
         <Form>
             <Label>Name</Label>
             <Input type='text'
                 placeholder='Recipe name, e.g. Doner Kebab'
+                value={name}
                 onChange={handleNameChange}
             />
             <Label>Description</Label>
             <TextArea
                 placeholder='Recipe description, e.g. The tastiest Doner Kebab you have ever eaten'
+                value={description}
                 onChange={handleDescriptionChange}
                 required
             />

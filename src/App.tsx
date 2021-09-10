@@ -1,8 +1,9 @@
 import React from 'react';
 import { BrowserRouter as Router, Link, Switch, Route } from 'react-router-dom';
 
-import ListRecipes from './screens/ListRecipes/ListRecipes';
 import CreateRecipe from './screens/CreateRecipe/CreateRecipe';
+import EditRecipe from './screens/EditRecipe/EditRecipe';
+import ListRecipes from './screens/ListRecipes/ListRecipes';
 
 import Nav from './components/Nav/Nav';
 import NavList from './components/NavList/NavList';
@@ -29,6 +30,9 @@ function App() {
           <Switch>
               <Route path="/create">
                   <CreateRecipe />
+              </Route>
+              <Route path="/edit/:id">
+                  <EditRecipe />
               </Route>
               <Route path="/">
                   <ListRecipes />

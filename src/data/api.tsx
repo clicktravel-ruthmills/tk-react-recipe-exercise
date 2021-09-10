@@ -11,6 +11,11 @@ export const createRecipe = (recipe: Recipe): Promise<void> =>
         (response) => response.results || response
     );
 
+export const getRecipe = (id: number): Promise<Recipe> =>
+    request('GET', id, '').then(
+        (response) => response.results || response
+    );
+
 export const updateRecipe = (recipe: Recipe): Promise<void> =>
     request('PATCH', recipe.id, '').then(
         (response) => response.results || response

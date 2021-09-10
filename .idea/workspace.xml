@@ -2,12 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3df307bc-f931-407c-967a-6df3fd8a00c2" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/components/RecipeRow/RecipeRow.test.tsx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/components/RecipeRow/RecipeRow.tsx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/components/RecipeRow/index.tsx" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/App.tsx" afterPath="$PROJECT_DIR$/src/App.tsx" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/RecipeForm/RecipeForm.tsx" afterPath="$PROJECT_DIR$/src/components/RecipeForm/RecipeForm.tsx" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/RecipeList/RecipeList.tsx" afterPath="$PROJECT_DIR$/src/components/RecipeList/RecipeList.tsx" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/data/api.tsx" afterPath="$PROJECT_DIR$/src/data/api.tsx" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/screens/EditRecipe/EditRecipe.tsx" afterPath="$PROJECT_DIR$/src/screens/EditRecipe/EditRecipe.tsx" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/screens/ListRecipes/ListRecipes.tsx" afterPath="$PROJECT_DIR$/src/screens/ListRecipes/ListRecipes.tsx" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -25,22 +24,60 @@
       <file leaf-file-name="RecipeList.tsx" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/RecipeList/RecipeList.tsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-49">
-              <caret line="17" column="26" lean-forward="true" selection-start-line="17" selection-start-column="26" selection-end-line="17" selection-end-column="26" />
+            <state relative-caret-position="329">
+              <caret line="42" column="0" lean-forward="true" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
-                <marker date="1631265527678" expanded="true" signature="363:1151" ph="..." />
-                <marker date="1631265527678" expanded="true" signature="1048:1113" ph="..." />
+                <marker date="1631269946518" expanded="true" signature="426:1249" ph="..." />
+                <marker date="1631269946518" expanded="true" signature="1146:1211" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ListRecipes.tsx" pinned="false" current-in-tab="false">
+      <file leaf-file-name="ListRecipes.tsx" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/screens/ListRecipes/ListRecipes.tsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="249">
-              <caret line="23" column="23" lean-forward="true" selection-start-line="23" selection-start-column="23" selection-end-line="23" selection-end-column="23" />
+            <state relative-caret-position="170">
+              <caret line="24" column="34" lean-forward="false" selection-start-line="24" selection-start-column="34" selection-end-line="24" selection-end-column="34" />
+              <folding>
+                <element signature="e#0#51#0" expanded="true" />
+                <marker date="1631271941644" expanded="true" signature="1060:1246" ph="..." />
+                <marker date="1631271941644" expanded="true" signature="1085:1231" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="App.tsx" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/App.tsx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="397">
+              <caret line="34" column="29" lean-forward="false" selection-start-line="34" selection-start-column="29" selection-end-line="34" selection-end-column="29" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="api.tsx" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/data/api.tsx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="405">
+              <caret line="27" column="0" lean-forward="true" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#39#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="EditRecipe.tsx" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/screens/EditRecipe/EditRecipe.tsx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="315">
+              <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
               <folding>
                 <element signature="e#0#51#0" expanded="true" />
               </folding>
@@ -48,13 +85,13 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="api.tsx" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/data/api.tsx">
+      <file leaf-file-name="CreateRecipe.tsx" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/screens/CreateRecipe/CreateRecipe.tsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="20" column="22" lean-forward="false" selection-start-line="20" selection-start-column="22" selection-end-line="20" selection-end-column="22" />
+            <state relative-caret-position="240">
+              <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
               <folding>
-                <element signature="e#0#39#0" expanded="true" />
+                <element signature="e#0#26#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -63,8 +100,8 @@
       <file leaf-file-name="RecipeForm.tsx" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/RecipeForm/RecipeForm.tsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="132">
-              <caret line="12" column="46" lean-forward="true" selection-start-line="12" selection-start-column="14" selection-end-line="12" selection-end-column="46" />
+            <state relative-caret-position="343">
+              <caret line="71" column="35" lean-forward="false" selection-start-line="71" selection-start-column="35" selection-end-line="71" selection-end-column="35" />
               <folding>
                 <element signature="e#0#51#0" expanded="true" />
               </folding>
@@ -137,21 +174,21 @@
         <option value="$PROJECT_DIR$/src/components/ErrorMessage/ErrorMessage.tsx" />
         <option value="$PROJECT_DIR$/src/setupProxy.js" />
         <option value="$PROJECT_DIR$/package.json" />
-        <option value="$PROJECT_DIR$/src/screens/EditRecipe/EditRecipe.tsx" />
         <option value="$PROJECT_DIR$/src/utils/api/index.tsx" />
         <option value="$PROJECT_DIR$/src/utils/api/index.test.js" />
         <option value="$PROJECT_DIR$/src/components/Label/index.tsx" />
         <option value="$PROJECT_DIR$/src/components/Nav/index.tsx" />
         <option value="$PROJECT_DIR$/src/components/NavList/index.tsx" />
         <option value="$PROJECT_DIR$/src/components/NavEntry/index.tsx" />
-        <option value="$PROJECT_DIR$/src/App.tsx" />
         <option value="$PROJECT_DIR$/src/components/NavEntry/NavEntry.tsx" />
         <option value="$PROJECT_DIR$/src/components/NavList/NavList.tsx" />
         <option value="$PROJECT_DIR$/src/components/Nav/Nav.tsx" />
-        <option value="$PROJECT_DIR$/src/components/RecipeForm/RecipeForm.tsx" />
-        <option value="$PROJECT_DIR$/src/components/RecipeList/RecipeList.tsx" />
-        <option value="$PROJECT_DIR$/src/screens/ListRecipes/ListRecipes.tsx" />
         <option value="$PROJECT_DIR$/src/data/api.tsx" />
+        <option value="$PROJECT_DIR$/src/components/RecipeList/RecipeList.tsx" />
+        <option value="$PROJECT_DIR$/src/App.tsx" />
+        <option value="$PROJECT_DIR$/src/screens/EditRecipe/EditRecipe.tsx" />
+        <option value="$PROJECT_DIR$/src/components/RecipeForm/RecipeForm.tsx" />
+        <option value="$PROJECT_DIR$/src/screens/ListRecipes/ListRecipes.tsx" />
       </list>
     </option>
   </component>
@@ -405,7 +442,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="60904000" />
+    <option name="totallyTimeSpent" value="64068000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="731" extended-state="6" />
@@ -3640,31 +3677,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/screens/EditRecipe/EditRecipe.tsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/data/types.tsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
           <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/screens/CreateRecipe/CreateRecipe.tsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -3697,16 +3714,6 @@
         <state relative-caret-position="15">
           <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/App.tsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="494">
-          <caret line="38" column="4" lean-forward="true" selection-start-line="38" selection-start-column="4" selection-end-line="38" selection-end-column="4" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -3774,28 +3781,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/RecipeList/RecipeList.tsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-49">
-          <caret line="17" column="26" lean-forward="true" selection-start-line="17" selection-start-column="26" selection-end-line="17" selection-end-column="26" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-            <marker date="1631265527678" expanded="true" signature="363:1151" ph="..." />
-            <marker date="1631265527678" expanded="true" signature="1048:1113" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/RecipeForm/RecipeForm.tsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="12" column="46" lean-forward="true" selection-start-line="12" selection-start-column="14" selection-end-line="12" selection-end-column="46" />
-          <folding>
-            <element signature="e#0#51#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/utils/api/index.tsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3">
@@ -3804,22 +3789,76 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/screens/ListRecipes/ListRecipes.tsx">
+    <entry file="file://$PROJECT_DIR$/src/data/api.tsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="249">
-          <caret line="23" column="23" lean-forward="true" selection-start-line="23" selection-start-column="23" selection-end-line="23" selection-end-column="23" />
+        <state relative-caret-position="405">
+          <caret line="27" column="0" lean-forward="true" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/screens/CreateRecipe/CreateRecipe.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/App.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="397">
+          <caret line="34" column="29" lean-forward="false" selection-start-line="34" selection-start-column="29" selection-end-line="34" selection-end-column="29" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/screens/EditRecipe/EditRecipe.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
           <folding>
             <element signature="e#0#51#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/data/api.tsx">
+    <entry file="file://$PROJECT_DIR$/src/components/RecipeForm/RecipeForm.tsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="22" lean-forward="false" selection-start-line="20" selection-start-column="22" selection-end-line="20" selection-end-column="22" />
+        <state relative-caret-position="343">
+          <caret line="71" column="35" lean-forward="false" selection-start-line="71" selection-start-column="35" selection-end-line="71" selection-end-column="35" />
           <folding>
-            <element signature="e#0#39#0" expanded="true" />
+            <element signature="e#0#51#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/RecipeList/RecipeList.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="329">
+          <caret line="42" column="0" lean-forward="true" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+            <marker date="1631269946518" expanded="true" signature="426:1249" ph="..." />
+            <marker date="1631269946518" expanded="true" signature="1146:1211" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/screens/ListRecipes/ListRecipes.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="24" column="34" lean-forward="false" selection-start-line="24" selection-start-column="34" selection-end-line="24" selection-end-column="34" />
+          <folding>
+            <element signature="e#0#51#0" expanded="true" />
+            <marker date="1631271941644" expanded="true" signature="1060:1246" ph="..." />
+            <marker date="1631271941644" expanded="true" signature="1085:1231" ph="..." />
           </folding>
         </state>
       </provider>
