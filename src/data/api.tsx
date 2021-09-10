@@ -7,7 +7,7 @@ export const listRecipes = (name: string): Promise<Array<Recipe>> =>
     );
 
 export const createRecipe = (recipe: Recipe): Promise<void> =>
-    request('POST', '', '').then(
+    request('POST', '', '', recipe).then(
         (response) => response.results || response
     );
 
@@ -16,8 +16,8 @@ export const getRecipe = (id: number): Promise<Recipe> =>
         (response) => response.results || response
     );
 
-export const updateRecipe = (recipe: Recipe): Promise<void> =>
-    request('PATCH', recipe.id, '').then(
+export const updateRecipe = (id: number, recipe: Recipe): Promise<void> =>
+    request('PATCH', id, '', recipe).then(
         (response) => response.results || response
     );
 

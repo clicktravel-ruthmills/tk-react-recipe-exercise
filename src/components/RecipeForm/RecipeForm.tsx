@@ -20,6 +20,7 @@ const RecipeForm = ({
     const [renderError, setRenderError] = useState(false);
     const [name, setName] = useState('');
     const [description, setDescription] = useState('');
+    const [ingredients, setIngredients] = useState('');
 
     const handleNameChange = (event: React.FormEvent<HTMLInputElement>): void => {
         setName(event.currentTarget.value)
@@ -29,13 +30,23 @@ const RecipeForm = ({
         setDescription(event.currentTarget.value)
     };
 
+    const handleIngredientsChange = (event: React.FormEvent<HTMLTextAreaElement>): void => {
+        setIngredients(event.currentTarget.value);
+    };
+
     const saveRecipe = (event: React.FormEvent) => {
         event.preventDefault();
-        if (name && description) {
+        const ingredientsArray = ingredients.split(',')
+            .map(ingredient => ingredient.trim())
+            .filter(ingredient => ingredient.length > 0)
+            .map(ingredient => ({
+                name: ingredient,
+            }));
+        if (name && description && ingredientsArray.length > 0) {
             onSubmit({
                 name,
                 description,
-                ingredients: [],
+                ingredients: ingredientsArray,
             });
         } else {
             setRenderError(true);
@@ -53,8 +64,11 @@ const RecipeForm = ({
 
     useEffect(() => {
         if (value) {
-            setName(value.name)
-            setDescription(value.description)
+            setName(value.name);
+            setDescription(value.description);
+            setIngredients(value.ingredients.map(
+                ingredient => ingredient.name
+            ).join(', '));
         }
     }, [value]);
 
@@ -71,6 +85,13 @@ const RecipeForm = ({
                 placeholder='Recipe description, e.g. The tastiest Doner Kebab you have ever eaten'
                 value={description}
                 onChange={handleDescriptionChange}
+                required
+            />
+            <Label>Ingredients</Label>
+            <TextArea
+                placeholder='Comma-separated list of ingredients, e.g. mystery meat, pitta bread, salad, chilli sauce'
+                value={ingredients}
+                onChange={handleIngredientsChange}
                 required
             />
             <Button submit={true} primary={true} color='green' onClick={saveRecipe}>Save Recipe</Button>

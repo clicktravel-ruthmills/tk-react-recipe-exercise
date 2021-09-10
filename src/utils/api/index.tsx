@@ -14,10 +14,12 @@ export const request = (
     method: string,
     id?: number | '',
     name?: string | '',
+    payload?: any | undefined,
 ) => {
-    const url = '/recipes/' + (id ? id : '') + ((name && name !== '') ? `?name=${name}` : '');
+    const url = '/recipes/' + (id ? (id + '/') : '') + ((name && name !== '') ? `?name=${name}` : '');
     const headers = { 'Content-Type': 'application/json' };
-    const finalOptions = Object.assign({}, { headers, method });
+    const body = payload ? JSON.stringify(payload) : undefined;
+    const finalOptions = Object.assign({}, { headers, method, body });
     return fetch(url, finalOptions)
         .then((response: Response) => {
             const { status } = response;

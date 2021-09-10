@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react';
-import { useParams } from 'react-router-dom';
+import { useParams, useHistory } from 'react-router-dom';
 import RecipeForm from '../../components/RecipeForm';
 import { getRecipe, updateRecipe } from '../../data/api';
+import { Recipe } from '../../data/types';
 
 type Props = {
 };
@@ -13,6 +14,7 @@ type EditRecipeParams = {
 const EditRecipe = ({
 }: Props) => {
     const { id } = useParams<EditRecipeParams>();
+    const history = useHistory();
 
     const [recipe, setRecipe] = useState<any>();
 
@@ -25,12 +27,17 @@ const EditRecipe = ({
         }
     };
 
+    const updateExistingRecipe = async (recipe: Recipe) => {
+        await updateRecipe(parseInt(id), recipe);
+        history.push('/');
+    };
+
     useEffect(() => {
         retrieveAndSetRecipe()
     }, []);
 
     return (
-        <RecipeForm value={recipe} onSubmit={updateRecipe}/>
+        <RecipeForm value={recipe} onSubmit={updateExistingRecipe}/>
     );
 };
 
