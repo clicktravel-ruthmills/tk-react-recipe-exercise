@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3df307bc-f931-407c-967a-6df3fd8a00c2" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/RecipeForm/RecipeForm.tsx" afterPath="$PROJECT_DIR$/src/components/RecipeForm/RecipeForm.tsx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/RecipeList/RecipeList.tsx" afterPath="$PROJECT_DIR$/src/components/RecipeList/RecipeList.tsx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/screens/ListRecipes/ListRecipes.tsx" afterPath="$PROJECT_DIR$/src/screens/ListRecipes/ListRecipes.tsx" />
-    </list>
+    <list default="true" id="3df307bc-f931-407c-967a-6df3fd8a00c2" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -21,12 +17,11 @@
       <file leaf-file-name="ListRecipes.tsx" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/screens/ListRecipes/ListRecipes.tsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="458">
-              <caret line="34" column="32" lean-forward="false" selection-start-line="34" selection-start-column="32" selection-end-line="34" selection-end-column="32" />
+            <state relative-caret-position="446">
+              <caret line="71" column="0" lean-forward="false" selection-start-line="66" selection-start-column="0" selection-end-line="71" selection-end-column="0" />
               <folding>
                 <element signature="e#0#51#0" expanded="true" />
-                <marker date="1631282583167" expanded="true" signature="1561:2194" ph="..." />
-                <marker date="1631282583167" expanded="true" signature="2033:2179" ph="..." />
+                <marker date="1631283098261" expanded="true" signature="1561:2194" ph="..." />
               </folding>
             </state>
           </provider>
@@ -361,7 +356,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="71833000" />
+    <option name="totallyTimeSpent" value="72302000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="731" extended-state="6" />
@@ -3766,12 +3761,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/screens/ListRecipes/ListRecipes.tsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="458">
-          <caret line="34" column="32" lean-forward="false" selection-start-line="34" selection-start-column="32" selection-end-line="34" selection-end-column="32" />
+        <state relative-caret-position="446">
+          <caret line="71" column="0" lean-forward="false" selection-start-line="66" selection-start-column="0" selection-end-line="71" selection-end-column="0" />
           <folding>
             <element signature="e#0#51#0" expanded="true" />
-            <marker date="1631282583167" expanded="true" signature="1561:2194" ph="..." />
-            <marker date="1631282583167" expanded="true" signature="2033:2179" ph="..." />
+            <marker date="1631283098261" expanded="true" signature="1561:2194" ph="..." />
           </folding>
         </state>
       </provider>
