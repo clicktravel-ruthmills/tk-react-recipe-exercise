@@ -23,11 +23,11 @@ const RecipeForm = ({
     const [ingredients, setIngredients] = useState('');
 
     const handleNameChange = (event: React.FormEvent<HTMLInputElement>): void => {
-        setName(event.currentTarget.value)
+        setName(event.currentTarget.value);
     };
 
     const handleDescriptionChange = (event: React.FormEvent<HTMLTextAreaElement>): void => {
-        setDescription(event.currentTarget.value)
+        setDescription(event.currentTarget.value);
     };
 
     const handleIngredientsChange = (event: React.FormEvent<HTMLTextAreaElement>): void => {
@@ -50,7 +50,7 @@ const RecipeForm = ({
             });
         } else {
             setRenderError(true);
-            setTimeout(() => { setRenderError(false) }, 5000)
+            setTimeout(() => { setRenderError(false) }, 5000);
         }
     };
 

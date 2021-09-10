@@ -17,7 +17,7 @@ const RecipeList = ({
 
     const columns: Array<any> = [
         {
-            name: 'Title',
+            name: 'Name',
             selector: (row: any) => row.name,
             sortable: true,
         },
